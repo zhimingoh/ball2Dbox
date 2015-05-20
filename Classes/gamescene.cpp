@@ -14,7 +14,7 @@ bool gamescence::init()
 	m_ball=CCSprite::create("ball.png");
 	m_ball->setPosition(ccp(400,240));
 	this->addChild(m_ball);
-	_world=new b2World(b2Vec2(0,-2.0f));//�������ٶ�8.0������
+	_world=new b2World(b2Vec2(0,-2.0f));//重力加速度
 	//b2BodyDef������Ϣ   b2Body
 
 	ball=Box2DU::createDynamicBody(420/PTM_RATIO,400/PTM_RATIO,m_ball,_world);
